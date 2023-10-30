@@ -1,0 +1,59 @@
+<div class="main">
+    <div class="card">
+        <form #addProductForm="ngForm" (submit)="addProduct(addProductForm)">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Name of product</label>
+                <input type="text" name="name" ngModel class="form-control" id="exampleFormControlInput1"
+                    placeholder="Iphone 15">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Price</label>
+                <input type="text" name="price" ngModel class="form-control" id="exampleFormControlInput1"
+                    placeholder="1,50,000">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Image Link</label>
+                <input type="text" name="img" ngModel class="form-control" id="exampleFormControlInput1"
+                    placeholder="link to image">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Brand Name</label>
+                <input type="text" name="brandName" ngModel class="form-control" id="exampleFormControlInput1"
+                    placeholder="Apple">
+            </div>
+            <select name="category" ngModel class="form-select form-select-lg mb-3" aria-label="Large select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">weight</label>
+                <input name="weight" ngModel type="number" name="brandName" ngModel class="form-control"
+                    id="exampleFormControlInput1" placeholder="Apple">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">height</label>
+                <input name="height" ngModel type="number" name="brandName" ngModel class="form-control"
+                    id="exampleFormControlInput1" placeholder="Apple">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">quantity</label>
+                <input name="quantity" ngModel type="number" name="brandName" ngModel class="form-control"
+                    id="exampleFormControlInput1" placeholder="Apple">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                <textarea name="description" ngModel class="form-control" id="exampleFormControlTextarea1"
+                    rows="3"></textarea>
+            </div>
+            <div style="text-align: center;">
+                <button type="submit" class="btn btn-success">submit</button>
+            </div>
+        </form>
+    </div>
+</div>

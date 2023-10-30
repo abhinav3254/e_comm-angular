@@ -1,0 +1,12 @@
+<div class="main">
+    <form #addCategory="ngForm" (submit)="addCategoryForm(addCategory)">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Category Name</label>
+            <input name="name" ngModel type="email" class="form-control" id="exampleFormControlInput1"
+                placeholder="Romance....">
+        </div>
+        <div style="text-align: center;">
+            <button type="submit" class="btn btn-success">submit</button>
+        </div>
+    </form>
+</div>
